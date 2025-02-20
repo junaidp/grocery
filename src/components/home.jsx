@@ -1,5 +1,9 @@
 import React from "react";
 import GroceryMobileApp from "./grocery";
+import { faQrcode } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons/faShoppingCart";
+import { faBox } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const home = () => {
   return (
@@ -186,7 +190,10 @@ const home = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               <div className="feature-card bg-white p-8 rounded-lg shadow-lg">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                  <i className="fas fa-qrcode text-purple-600 text-2xl"></i>
+                  <FontAwesomeIcon
+                    icon={faQrcode}
+                    className="fas fa-qrcode text-purple-600 text-2xl"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-4">QR Code Integration</h3>
                 <p className="text-gray-600">
@@ -197,7 +204,10 @@ const home = () => {
 
               <div className="feature-card bg-white p-8 rounded-lg shadow-lg">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                  <i className="fas fa-box text-purple-600 text-2xl"></i>
+                  <FontAwesomeIcon
+                    icon={faBox}
+                    className="fas fa-qrcode text-purple-600 text-2xl"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-4">Real-time Inventory</h3>
                 <p className="text-gray-600">
@@ -208,7 +218,10 @@ const home = () => {
 
               <div className="feature-card bg-white p-8 rounded-lg shadow-lg">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                  <i className="fas fa-shopping-cart text-purple-600 text-2xl"></i>
+                  <FontAwesomeIcon
+                    icon={faShoppingCart}
+                    className="fas fa-qrcode text-purple-600 text-2xl"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-4">Online Ordering</h3>
                 <p className="text-gray-600">
