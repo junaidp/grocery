@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Order from './order'
-function App() {
-  const [count, setCount] = useState(0)
+import React from "react";
+import Home from "./components/home";
+import "./App.css";
 
+const App = () => {
   return (
-    <Order/>
-  )
-}
+    <div>
+      <Home />
+    </div>
+  );
+};
 
-export default App
+export default App;
